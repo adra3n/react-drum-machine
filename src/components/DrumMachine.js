@@ -185,7 +185,7 @@ const DrumMachine = () => {
           onMouseEnter={() => handleButtonHover('drum-Z')}
           onMouseLeave={handleButtonLeave}
         >
-          <p>D</p>
+          <p>Z</p>
 
           <p>Ride</p>
           <audio src={require('../assets/Z.mp3')} className="clip" id="Z" />
