@@ -48,7 +48,15 @@ const DrumMachine = () => {
 
   return (
     <div className="container pt-5" id="drum-machine">
-      <h1 className="text-center text-white">Lets Rock!</h1>
+      <h1
+        className="text-center text-white"
+        style={{
+          fontWeight: '500',
+          fontSize: '3rem',
+        }}
+      >
+        Lets Rock!
+      </h1>
       <div>
         <div className="card-body my-4">
           <div className="text-center" id="display">
