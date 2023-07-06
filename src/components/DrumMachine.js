@@ -39,9 +39,9 @@ const DrumMachine = () => {
 
   return (
     <div className="container" id="drum-machine">
-      <h1 className="text-center">Lets Rock!</h1>
-      <div className="card my-3">
-        <div className="card-body">
+      <h1 className="text-center text-white">Lets Rock!</h1>
+      <div>
+        <div className="card-body my-4">
           <div className="text-center" id="display">
             {displayText}
           </div>
@@ -49,7 +49,7 @@ const DrumMachine = () => {
       </div>
       <div className="align-items-center text-center">
         <button
-          className="drum-pad btn col-3 btn-primary"
+          className="drum-pad btn  btn-primary"
           id="drum-0"
           onClick={() => play('Q')}
         >
@@ -57,7 +57,7 @@ const DrumMachine = () => {
           <audio src={require('../assets/Q.mp3')} className="clip" id="Q" />
         </button>
         <button
-          className="drum-pad btn col-3 btn-primary"
+          className="drum-pad btn  btn-primary"
           id="drum-1"
           onClick={() => play('W')}
         >
@@ -65,7 +65,7 @@ const DrumMachine = () => {
           <audio src={require('../assets/W.mp3')} className="clip" id="W" />
         </button>
         <button
-          className="drum-pad btn col-3 btn-primary"
+          className="drum-pad btn  btn-primary"
           id="drum-2"
           onClick={() => play('E')}
         >
@@ -77,7 +77,7 @@ const DrumMachine = () => {
 
       <div className="text-center">
         <button
-          className="drum-pad btn col-3 btn-success"
+          className="drum-pad btn  btn-success"
           id="drum-3"
           onClick={() => play('A')}
         >
@@ -85,7 +85,7 @@ const DrumMachine = () => {
           <audio src={require('../assets/A.mp3')} className="clip" id="A" />
         </button>
         <button
-          className="drum-pad btn col-3 btn-success"
+          className="drum-pad btn  btn-success"
           id="drum-4"
           onClick={() => play('S')}
         >
@@ -93,7 +93,7 @@ const DrumMachine = () => {
           <audio src={require('../assets/S.mp3')} className="clip" id="S" />
         </button>
         <button
-          className="drum-pad btn col-3 btn-success"
+          className="drum-pad btn  btn-success"
           id="drum-5"
           onClick={() => play('D')}
         >
@@ -105,7 +105,7 @@ const DrumMachine = () => {
 
       <div className="text-center">
         <button
-          className="drum-pad btn col-3 btn-warning"
+          className="drum-pad btn  btn-warning"
           id="drum-6"
           onClick={() => play('Z')}
         >
@@ -113,7 +113,7 @@ const DrumMachine = () => {
           <audio src={require('../assets/Z.mp3')} className="clip" id="Z" />
         </button>
         <button
-          className="drum-pad btn col-3 btn-warning"
+          className="drum-pad btn  btn-warning"
           id="drum-7"
           onClick={() => play('X')}
         >
@@ -121,7 +121,7 @@ const DrumMachine = () => {
           <audio src={require('../assets/X.mp3')} className="clip" id="X" />
         </button>
         <button
-          className="drum-pad btn col-3 btn-warning"
+          className="drum-pad btn  btn-warning"
           id="drum-8"
           onClick={() => play('C')}
         >
