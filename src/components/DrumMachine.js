@@ -4,38 +4,30 @@ const DrumMachine = () => {
   const [displayText, setDisplayText] = useState('Click a button to play!')
 
   const play = (str) => {
-    let newDisplayText = ''
+    setDisplayText(str)
 
-    if (str === 'Q' || str === 'q') {
-      newDisplayText = 'Rock on!'
-    } else if (str === 'W' || str === 'w') {
-      newDisplayText = 'Drum Roll!'
-    } else if (str === 'E' || str === 'e') {
-      newDisplayText = 'Music Time!'
-    } else if (str === 'A' || str === 'a') {
-      newDisplayText = 'Big Hit!'
-    } else if (str === 'S' || str === 's') {
-      newDisplayText = 'Party On!'
-    } else if (str === 'D' || str === 'd') {
-      newDisplayText = 'Jamming On!'
-    } else if (str === 'Z' || str === 'z') {
-      newDisplayText = 'Popstarts!'
-    } else if (str === 'X' || str === 'x') {
-      newDisplayText = 'On the Mood!'
-    } else if (str === 'C' || str === 'c') {
-      newDisplayText = 'On the Rhythm!'
-    }
-
-    setDisplayText(newDisplayText)
-
-    const audio = new Audio(`../assets/${str}.mp3`)
+    const audio = new Audio(require(`../assets/${str}.mp3`))
     audio.play()
   }
 
   useEffect(() => {
     const handleKeyPress = (event) => {
       const keystroke = event.key.toUpperCase()
-      play(keystroke)
+
+      // Check if the keystroke matches the keys you have conditions for
+      if (
+        keystroke === 'Q' ||
+        keystroke === 'W' ||
+        keystroke === 'E' ||
+        keystroke === 'A' ||
+        keystroke === 'S' ||
+        keystroke === 'D' ||
+        keystroke === 'Z' ||
+        keystroke === 'X' ||
+        keystroke === 'C'
+      ) {
+        play(keystroke)
+      }
     }
 
     document.addEventListener('keyup', handleKeyPress)
@@ -62,7 +54,7 @@ const DrumMachine = () => {
           onClick={() => play('Q')}
         >
           Q
-          <audio src="../assets/Q.mp3" className="clip" id="Q" />
+          <audio src={require('../assets/Q.mp3')} className="clip" id="Q" />
         </button>
         <button
           className="drum-pad btn col-3 btn-primary"
@@ -70,7 +62,7 @@ const DrumMachine = () => {
           onClick={() => play('W')}
         >
           W
-          <audio src="../assets/W.mp3" className="clip" id="W" />
+          <audio src={require('../assets/W.mp3')} className="clip" id="W" />
         </button>
         <button
           className="drum-pad btn col-3 btn-primary"
@@ -78,7 +70,7 @@ const DrumMachine = () => {
           onClick={() => play('E')}
         >
           E
-          <audio src="../assets/E.mp3" className="clip" id="E" />
+          <audio src={require('../assets/E.mp3')} className="clip" id="E" />
         </button>
       </div>
       <br />
@@ -90,7 +82,7 @@ const DrumMachine = () => {
           onClick={() => play('A')}
         >
           A
-          <audio src="../assets/A.mp3" className="clip" id="A" />
+          <audio src={require('../assets/A.mp3')} className="clip" id="A" />
         </button>
         <button
           className="drum-pad btn col-3 btn-success"
@@ -98,7 +90,7 @@ const DrumMachine = () => {
           onClick={() => play('S')}
         >
           S
-          <audio src="../assets/S.mp3" className="clip" id="S" />
+          <audio src={require('../assets/S.mp3')} className="clip" id="S" />
         </button>
         <button
           className="drum-pad btn col-3 btn-success"
@@ -106,7 +98,7 @@ const DrumMachine = () => {
           onClick={() => play('D')}
         >
           D
-          <audio src="../assets/D.mp3" className="clip" id="D" />
+          <audio src={require('../assets/D.mp3')} className="clip" id="D" />
         </button>
       </div>
       <br />
@@ -118,7 +110,7 @@ const DrumMachine = () => {
           onClick={() => play('Z')}
         >
           Z
-          <audio src="../assets/Z.mp3" className="clip" id="Z" />
+          <audio src={require('../assets/Z.mp3')} className="clip" id="Z" />
         </button>
         <button
           className="drum-pad btn col-3 btn-warning"
@@ -126,7 +118,7 @@ const DrumMachine = () => {
           onClick={() => play('X')}
         >
           X
-          <audio src="../assets/X.mp3" className="clip" id="X" />
+          <audio src={require('../assets/X.mp3')} className="clip" id="X" />
         </button>
         <button
           className="drum-pad btn col-3 btn-warning"
@@ -134,7 +126,7 @@ const DrumMachine = () => {
           onClick={() => play('C')}
         >
           C
-          <audio src="../assets/C.mp3" className="clip" id="C" />
+          <audio src={require('../assets/C.mp3')} className="clip" id="C" />
         </button>
       </div>
     </div>
