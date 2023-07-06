@@ -47,7 +47,7 @@ const DrumMachine = () => {
   }, [])
 
   return (
-    <div className="container" id="drum-machine">
+    <div className="container pt-5" id="drum-machine">
       <h1 className="text-center text-white">Lets Rock!</h1>
       <div>
         <div className="card-body my-4">
@@ -72,7 +72,7 @@ const DrumMachine = () => {
           onMouseLeave={handleButtonLeave}
         >
           <p>Q</p>
-          <p>--- Splash ---</p>
+          <p>Splash</p>
           <audio src={require('../assets/Q.mp3')} className="clip" id="Q" />
         </button>
         <button
@@ -90,7 +90,7 @@ const DrumMachine = () => {
           onMouseLeave={handleButtonLeave}
         >
           <p>W</p>
-          <p>--- China ---</p>
+          <p>China</p>
           <audio src={require('../assets/W.mp3')} className="clip" id="W" />
         </button>
         <button
@@ -108,7 +108,7 @@ const DrumMachine = () => {
           onMouseLeave={handleButtonLeave}
         >
           <p>E</p>
-          <p>--- Tom ---</p>
+          <p>Tom</p>
           <audio src={require('../assets/E.mp3')} className="clip" id="E" />
         </button>
       </div>
@@ -129,7 +129,7 @@ const DrumMachine = () => {
           onMouseLeave={handleButtonLeave}
         >
           <p>A</p>
-          <p>--- Snare ---</p>
+          <p>Snare</p>
           <audio src={require('../assets/A.mp3')} className="clip" id="A" />
         </button>
         <button
@@ -147,7 +147,7 @@ const DrumMachine = () => {
           onMouseLeave={handleButtonLeave}
         >
           <p>S</p>
-          <p>--- Crash ---</p>
+          <p>Crash</p>
           <audio src={require('../assets/S.mp3')} className="clip" id="S" />
         </button>
         <button
