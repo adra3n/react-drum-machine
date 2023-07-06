@@ -23,7 +23,6 @@ const DrumMachine = () => {
     const handleKeyPress = (event) => {
       const keystroke = event.key.toUpperCase()
 
-      // Check if the keystroke matches the keys you have conditions for
       if (
         keystroke === 'Q' ||
         keystroke === 'W' ||
@@ -67,7 +66,8 @@ const DrumMachine = () => {
           onMouseEnter={() => handleButtonHover('drum-Q')}
           onMouseLeave={handleButtonLeave}
         >
-          Q
+          <p>Q</p>
+          <p>--- Splash ---</p>
           <audio src={require('../assets/Q.mp3')} className="clip" id="Q" />
         </button>
         <button
@@ -79,7 +79,8 @@ const DrumMachine = () => {
           onMouseEnter={() => handleButtonHover('drum-W')}
           onMouseLeave={handleButtonLeave}
         >
-          W
+          <p>W</p>
+          <p>--- China ---</p>
           <audio src={require('../assets/W.mp3')} className="clip" id="W" />
         </button>
         <button
@@ -91,7 +92,8 @@ const DrumMachine = () => {
           onMouseEnter={() => handleButtonHover('drum-E')}
           onMouseLeave={handleButtonLeave}
         >
-          E
+          <p>E</p>
+          <p>--- Tom ---</p>
           <audio src={require('../assets/E.mp3')} className="clip" id="E" />
         </button>
       </div>
@@ -106,7 +108,8 @@ const DrumMachine = () => {
           onMouseEnter={() => handleButtonHover('drum-A')}
           onMouseLeave={handleButtonLeave}
         >
-          A
+          <p>A</p>
+          <p>--- Snare ---</p>
           <audio src={require('../assets/A.mp3')} className="clip" id="A" />
         </button>
         <button
@@ -118,7 +121,8 @@ const DrumMachine = () => {
           onMouseEnter={() => handleButtonHover('drum-S')}
           onMouseLeave={handleButtonLeave}
         >
-          S
+          <p>S</p>
+          <p>--- Crash ---</p>
           <audio src={require('../assets/S.mp3')} className="clip" id="S" />
         </button>
         <button
@@ -130,7 +134,8 @@ const DrumMachine = () => {
           onMouseEnter={() => handleButtonHover('drum-D')}
           onMouseLeave={handleButtonLeave}
         >
-          D
+          <p>D</p>
+          <p>--- Hi-Hat ---</p>
           <audio src={require('../assets/D.mp3')} className="clip" id="D" />
         </button>
       </div>
@@ -145,7 +150,8 @@ const DrumMachine = () => {
           onMouseEnter={() => handleButtonHover('drum-Z')}
           onMouseLeave={handleButtonLeave}
         >
-          Z
+          <p>D</p>
+          <p>--- Ride ---</p>
           <audio src={require('../assets/Z.mp3')} className="clip" id="Z" />
         </button>
         <button
@@ -157,7 +163,8 @@ const DrumMachine = () => {
           onMouseEnter={() => handleButtonHover('drum-X')}
           onMouseLeave={handleButtonLeave}
         >
-          X
+          <p>X</p>
+          <p>--- Kick ---</p>
           <audio src={require('../assets/X.mp3')} className="clip" id="X" />
         </button>
         <button
@@ -169,7 +176,8 @@ const DrumMachine = () => {
           onMouseEnter={() => handleButtonHover('drum-C')}
           onMouseLeave={handleButtonLeave}
         >
-          C
+          <p>C</p>
+          <p>--- Bell ---</p>
           <audio src={require('../assets/C.mp3')} className="clip" id="C" />
         </button>
       </div>

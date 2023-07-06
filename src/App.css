@@ -17,7 +17,6 @@
   text-align: center;
   margin: 0 auto;
   padding: 20px;
-
   display: flex;
   align-items: center;
   width: 650px;
@@ -46,6 +45,7 @@
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.6) inset, 2px 2px 3px grey;
   font-size: 30px;
+  font-weight: 900;
 }
 
 #display {
@@ -53,6 +53,10 @@
   width: 160px;
   padding: 15px;
   border-radius: 20px;
-
   font-size: 20px;
+}
+@media (max-width: 750px) {
+  .drum-pad {
+    width: 25%;
+  }
 }
