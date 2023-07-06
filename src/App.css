@@ -55,8 +55,19 @@
   border-radius: 20px;
   font-size: 20px;
 }
+.btn {
+  --bs-btn-font-weight: bolder;
+}
+button {
+  font-weight: bolder;
+}
 @media (max-width: 750px) {
   .drum-pad {
-    width: 25%;
+    font-size: 0.5rem;
+    width: 25vw;
+  }
+  .btn {
+    font-weight: bold;
+    font-size: 0.7rem;
   }
 }
